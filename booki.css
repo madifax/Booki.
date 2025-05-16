@@ -4,38 +4,44 @@ body {
     font-weight: 400;
 }
 
+.fa-solid {
+    color: var(--main-color);
+}
 /* header */
 /* navigation */
 nav {
     display: flex;
     justify-content: space-between;    
+    max-width: 1400px;
 }
 
 .nav-links {
     display: flex;
-    padding: 0px 50px 0px 50px;
+    padding: 10px 50px 50px 50px;
     gap: 68px;
     list-style: none;
     margin-top: 0px;
 }
 
+.nav-links a:hover {
+    cursor: pointer;
+    color: #0065fc;
+    border-top: 2px solid #0065fc;
+}
+
 .nav-links a{
     text-decoration: none;
     color: #000000;
+    padding-top: 15px ;
 }    
 
 #image{
-    max-width: 61.09px;
-    height: auto;
-    padding: 30px 50px 30px 50px;
+    width: 61.09px;
+    height: 19px;
     gap: 10px;
+    margin: 30px 0px 30px 50px;
 }
 
-.heb a{
-    color: #0065fc;
-    border-top: 2px solid #0065fc ;
-    padding: 6px;
-}    
 
 /* header-bot */
 .header-bot {
@@ -108,11 +114,11 @@ p {
 .bouton-search {
     background-color:#0065fc ;
     width: 130px;
-    height: 50px;
+    height: 52px;
     border: none;
     color: #ffffff;
     border-radius: 0px 15px 15px 0px;
-    cursor: pointer;
+    cursor: pointer;;
     font-size: 18px;
     font-weight: 700;
     font-family: 'Raleway', sans-serif;
@@ -177,30 +183,31 @@ main {
     background-color: #F2F2F2;
     border-radius: 15px;
     padding: 0px 30px 0px 30px;
-    width: 871px;
+    width: 811px;
     height: 615px;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    
 }
 
 .hebergements-cards {
     display: flex;
-    align-self: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
-    gap: 30px;
+    width: 100%;
+    
 }
 
 .hebergements-title {
-    align-self: flex-start;
+    padding-top: 10px;
+    height: 26px;
 }
 
 
 
 .afficher-plus {
-    justify-content: flex-start;
-    align-self: flex-end;
-    
+    padding-bottom: 0px;
+   
+    height: 21px;
+    margin-bottom: -20px;
 }
 
 .afficher-plus a{
@@ -211,12 +218,10 @@ main {
 }
 
 .card {
-    display: block;
     background-color: #ffffff;
     border-radius: 20px;
     height: 210px;
     width: 250px;
-
 }
 
 .card:hover {
@@ -229,18 +234,19 @@ main {
     padding: 5px 5px 0px 5px;
     height: 125px;
     width: 240px;
-    
-    
 }
 
 .card-content {
-    padding: 0px 15px 0px 15px;
+    padding: 0px 0px 10px 10px;
     text-decoration: none;
-    -webkit-text-decoration: none;
-    width: 250px;
-    height: 64px;
-    
-}
+    width: 230px;
+    height: 70px;
+    border: #fc0015 1px solid; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+} 
 
 .card-txt {
     color: #000000;
@@ -252,38 +258,56 @@ main {
     font-weight: 700;
     color: #000000;
     text-decoration: none;
-    
+    margin-top: 
+    margin-bottom: none;
+    border: #0065fc 1px solid;
 }
 
 .card-subtitle {
     font-size: 14px;
     font-weight: 400;
+    
+    border: #00fc58 1px solid;
+}
+
+.star {
+    
+    border: #fcc500 1px solid;
 }
 
 .populaires {
     flex-direction: column;
     background-color: #F2F2F2;
     border-radius: 15px;
-    padding: 0px 30px 0px 30px;
-    width: 430px;
+    padding: 0px 30px 0px 0px;
+    width: 400px;
     height: 615px;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center; 
+    justify-content: space-evenly;
 }
 
 .hebergements-and-populaires {
     display: flex;
     align-items: center;
     gap: 40px;
-    
 }
 
 .cardt {
+    display: flex;
     width: 370px;
     height: 145px;
     border-radius: 20px;
     background-color: #ffffff;
+    margin: 30px;
+}
+
+.cardt:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.section-title {
+    padding: 10px 0px 0px 30px;
 }
 
 .img-cardt {
@@ -294,11 +318,16 @@ main {
     flex-wrap: wrap;
 }
 
-.Activites {
-    display: flex;
-    justify-content: space-evenly;
+.Activités {
     width: 1340px;
     height: 560px;
+    margin: 35px 0px 35px 0px;
+}
+
+.activités-card {
+    display: flex;
+    justify-content: space-evenly;
+
 }
 
 .carda {
@@ -307,6 +336,11 @@ main {
     border-radius: 20px;
     box-shadow: 0px 0px 5px 5px #f2f2f2;
     gap:30px;
+}
+
+.carda:hover {
+    cursor: pointer;
+    transform: scale(1.1);
 }
 
 .img-carda{
@@ -320,20 +354,20 @@ main {
     font-weight: 700;
     color: #000000;
     padding: 0px 19px 0px 19px;
-
+    list-style: none;
 }
 
 .footer {
     background-color: #F2F2F2;
     display: flex;
     margin: 0px 50px 0px 50px;
-    gap: 300px;
+    gap: 250px;
     height: 163px;
+    width: 1340px;
 }
 
 .list {
-    padding: 20px;
-    align-items: center;
+    padding-left: 20px;
 }
 
 .list a {
@@ -343,7 +377,53 @@ main {
     font-weight: 400;
 }
 
-h3 :-webkit-any-link{
-        text-decoration: none !important;
-    }
+
+.liste-cards {
+    border: 1px solid #fc0015;
     
+}
+
+.footer-a {
+    padding-bottom: 15px;
+}
+
+.card-content-pop {
+    padding: 0px 0px 10px 10px;
+    text-decoration: none;
+    width: 230px;
+    height: 130px;
+    border: #fc0015 1px solid; 
+    display: flex;  
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card-txt-pop {
+    color: #000000;
+    margin-bottom: 50px;
+   border: 1px solid #fcc500;
+}
+
+.card-title-pop {
+    font-size:16px ;
+    font-weight: 700;
+    color: #000000;
+    text-decoration: none;
+    margin-top: 10px;
+    border: #0065fc 1px solid;
+}
+
+.card-subtitle-pop {
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: -5px;
+    border: #00fc58 1px solid;
+}
+
+.populaires-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: -20px;
+}
