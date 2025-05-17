@@ -237,15 +237,10 @@ main {
 }
 
 .card-content {
-    padding: 0px 0px 10px 10px;
+    padding: 0px 0px 0px 10px;
     text-decoration: none;
     width: 230px;
-    height: 70px;
-    border: #fc0015 1px solid; 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+    height: 70px; 
 } 
 
 .card-txt {
@@ -258,21 +253,17 @@ main {
     font-weight: 700;
     color: #000000;
     text-decoration: none;
-    margin-top: 
-    margin-bottom: none;
-    border: #0065fc 1px solid;
+    margin-top: 5px;
 }
 
 .card-subtitle {
     font-size: 14px;
     font-weight: 400;
-    
-    border: #00fc58 1px solid;
+    margin-top: -10px;
 }
 
-.star {
-    
-    border: #fcc500 1px solid;
+.card-rating {
+    margin-top: -10px;
 }
 
 .populaires {
@@ -388,21 +379,18 @@ main {
 }
 
 .card-content-pop {
-    padding: 0px 0px 10px 10px;
+    padding: 0px 0px 10px 15px;
     text-decoration: none;
     width: 230px;
-    height: 130px;
-    border: #fc0015 1px solid; 
-    display: flex;  
-    flex-direction: column;
+    height: 129px;
     justify-content: space-between;
-    flex-wrap: wrap;
+    flex-wrap: wrap; 
 }
 
 .card-txt-pop {
     color: #000000;
     margin-bottom: 50px;
-   border: 1px solid #fcc500;
+    height: 80px;
 }
 
 .card-title-pop {
@@ -411,14 +399,12 @@ main {
     color: #000000;
     text-decoration: none;
     margin-top: 10px;
-    border: #0065fc 1px solid;
 }
 
 .card-subtitle-pop {
     font-size: 14px;
     font-weight: 400;
     margin-top: -5px;
-    border: #00fc58 1px solid;
 }
 
 .populaires-title {
@@ -426,4 +412,8 @@ main {
     align-items: center;
     justify-content: space-between;
     margin-bottom: -20px;
+}
+
+.card-rating- {
+    margin-top: -20px;
 }
