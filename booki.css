@@ -516,24 +516,23 @@ main {
         gap: 30px;
         width: 375px;
         height: 115px;
-        border: #fc0015  1px solid;
         align-items: center;
     }
     .nav-links{
-        border: olive 1px solid;
         width: 100%;
-        border: #000000 1px solid;
-        gap: 0px;
+        gap : 0px;
+    }
+    .nav-links li:hover {
+        border-bottom: #0065fc 2px solid;
+        padding-bottom: 10px;
     }
     .nav-links a:hover{
-        border-bottom: 2px solid #0065fc;
         border-top: none;
-        padding-bottom: 15px;
-        
     }
     .nav-links li {
-        border: #0065fc 1px solid;
-       
+       width: 100%;
+        padding-bottom: 15px;
+        text-align: center;
     }
     h1 {
         max-width: 375px;
@@ -605,6 +604,18 @@ main {
         display: flex;
         flex-direction: column;
         height: 100%;
+    }
+    .search-bar{
+        width: 100%;
+        
+    }
+    .info-container {
+        border: #fc0015 1px solid;
+        height: 55px;
+        flex-wrap: wrap;
+    }
+    .hebergements-cards {
+        gap: 10px;
     }
 
  }
