@@ -47,6 +47,7 @@ nav {
 .header-bot {
     margin: 0px 0px 0px 0px;
     gap: 35px;
+    height: 100%;
 }
 h1 {
     font-size: 22px;
@@ -93,6 +94,7 @@ p {
     align-items: center;
     gap : 10px;
     cursor: pointer;
+    height: 100%;
 }
 .buttons a {
     text-decoration: none;
@@ -552,10 +554,6 @@ h2 {
         justify-content: flex-start;
         max-height: 142px;
     }
-    .info-container {
-        width: 100%;
-        flex-wrap: wrap;
-    }
     .header-bot{
         margin-left: 20px;
         margin-right: 20px;
@@ -628,10 +626,6 @@ h2 {
     }
     .search-bar{
         width: 100%;
-    }
-    .info-container {
-        height: 55px;
-        flex-wrap: wrap;
     }
     .hebergements-cards {
         gap: 10px;
