@@ -720,14 +720,20 @@ h2 {
         border-bottom: #F2F2F2 2px solid;
     }
     .search-bar input{
-        max-width: 100%;
+        max-width: 99%;
     }
     h1 {
         max-width: 600px;
         margin-top: 30px;
     }
     .bouton-search {
+        display: flex;
+        padding: 15px 16px 15px 16px ;
+        border-radius: 15px;
         width: 49px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        justify-content: center;
+        margin-left: -5px;
     }
     .filtre-container {
        display: flex;
